@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Pasapalabra</h1>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    </style>
+</head>
+<body>
+    <section>
+        <div class="circle-container">
+            <div class="circles">
+                <p class="circle letter not-answered">A</p>
+                <p class="circle letter not-answered">B</p>
+                <p class="circle letter not-answered">C</p>
+                <p class="circle letter not-answered">D</p>
+                <p class="circle letter not-answered">E</p>
+                <p class="circle letter not-answered">F</p>
+                <p class="circle letter not-answered">G</p>
+                <p class="circle letter not-answered">H</p>
+                <p class="circle letter not-answered">I</p>
+                <p class="circle letter not-answered">J</p>
+                <p class="circle letter not-answered">K</p>
+                <p class="circle letter not-answered">L</p>
+                <p class="circle letter not-answered">M</p>
+                <p class="circle letter not-answered">N</p>
+                <p class="circle letter not-answered">Ñ</p>
+                <p class="circle letter not-answered">O</p>
+                <p class="circle letter not-answered">P</p>
+                <p class="circle letter not-answered">Q</p>
+                <p class="circle letter not-answered">R</p>
+                <p class="circle letter not-answered">S</p>
+                <p class="circle letter not-answered">T</p>
+                <p class="circle letter not-answered">U</p>
+                <p class="circle letter not-answered">V</p>
+                <p class="circle letter not-answered">W</p>
+                <p class="circle letter not-answered">X</p>
+                <p class="circle letter not-answered">Y</p>
+                <p class="circle letter not-answered">Z</p>
+            </div>
+            <div>
+                <div class="outside-circle1"></div>
+                <div class="outside-circle2"></div>
+            </div>
+            <div class="timer">
+                <button class="time-play" disabled></button>
+            </div>
+            <div class="points">
+                <button class="letters-correct" disabled></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="rules-controlers">
+        <div id='rules-display' class="rules hidden">
+            <p class="title">REGLAS:</p>
+            <ul class="list-rules">
+                <li>El juego consiste en rondas de preguntas. Una por cada letra del abecedario.</li>
+                <li>Para responder debes escribir en el cuadro de texto.</li>
+                <li>Si quieres pasar palabra, puedes hacer click en el botón indicado para ello.</li>
+                <li>Las preguntas correctas sumaran un punto.</li>
+                <li>Si contestas erroneamente, simplemente no optas a completar el rosco y ganar el bote.</li>
+                <li>Siempre que te encuentres dentro del recuadro de la respuesta, puedes usar las teclas enter (aceptar), shift (pasapalabra) y esc (salir)</li>
+                <li>El programa es sensile a la acentuación. Introduce las respuestas sin tildes.</li>
+                <li>Al final del juego, si respondes todas las preguntas, podrás ver tu resultado en un ranking de jugadores.</li>
+                <li>Para completar las 27 preguntas/respuestas, dispones de 170 segundos. Suerte!</li>
+            </ul>
+            <div class="play-button ranking-button">
+                <button class="button-play">▶ Jugar!</button>
+                <button class="button-ranking">Ranking</button>
+            </div>
+        </div>
+        <div id="ranking-display" class="ranking-list hidden">
+            <p>Ranking de jugadores:</p><br>
+            <ol id="ranking-list" class="players-ranking" >
+                
+            </ol>
+        </div>
+        <div id="goback-button" class="button-gb hidden">
+            <button class="button-volver">⇦ Volver</button>
+        </div>
+        <div id="welcome-display" class="welcome">
+            <p class="text">Bienvenid@ a Pasapalabra!
+            <p class="textintro">Porfavor, introduce tu nombre para poder continuar.</p>
+            <div class="username">
+                <input class="name" type="text" placeholder="Tu nombre">
+                <button class="button-continuar">Continuar</button>
+            </div>
+        </div>
+        <div id="questions-display" class="questions-section hidden">
+            <p class="questions"></p>
+            <div class="questions-controls">
+                <input class="answer"  type="text" placeholder="Introduce tu respuesta">
+                <button class="button-accept">Aceptar</button>
+                <button class="button-pasapalabra">Pasapalabra</button>
+                <button class="button-exit">Exit</button>
+            </div>
+        </div>
+        <div id="gameover-display" class="gameover hidden">
+            <div class="playagain-mssg">
+                <p class="text-playagain">Fin de la partida. ¿Quieres volver a jugar?</p>
+            </div>
+            <div class="playagain-controls">
+                <button class="button-ng">↺ Jugar de nuevo</button>
+            </div>
+        </div>
+    </div>
+    <script src="pasapalabra.js"></script>
+</body>
+</html>
